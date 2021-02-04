@@ -2,7 +2,7 @@ let colleges = []
 const zoneAttributes = {}
 
 function loadColleges() {
-  fetch('/schools.json').then((res) =>
+  fetch('https://cdn.jsdelivr.net/gh/salaheddinezaka/lincx-controls/search-schools/schools.json').then((res) =>
     res.json().then((vals) => (colleges = vals))
   )
 }
