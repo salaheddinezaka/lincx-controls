@@ -1,0 +1,258 @@
+.scores__modal--background {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999998;
+}
+
+.scores__modal {
+  position: absolute;
+  max-height: calc(100vh - 60px);
+  width: 288px;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 60px 0 rgba(112, 115, 114, 0.13);
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.scores__modal svg {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.modal__info {
+  margin: 0 auto;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  margin-bottom: 32px;
+}
+
+.modal__header img {
+  height: 72px;
+}
+
+.modal__title {
+  width: auto;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
+  color: #3c3b3b;
+  text-align: center;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal__input {
+  margin-bottom: 4px;
+  position: relative;
+}
+.modal__input input,
+.control__input input {
+  padding: 10px 10px;
+  opacity: 0.5;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #3c3b3b;
+  width: 100%;
+}
+
+.suggestions__list {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  height: 284px;
+  overflow-y: scroll;
+  padding-top: 15px;
+  border-radius: 4px;
+  border: solid 1px #ced8d6;
+  z-index: 10;
+}
+.suggestion__item {
+  cursor: pointer;
+}
+.suggestion__item:hover {
+  background-color: #ced8d6;
+}
+
+.suggestion__item span {
+  display: block;
+  padding: 0 10px;
+}
+
+span.college__name {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #3c3b3b;
+}
+
+span.college__city {
+  opacity: 0.5;
+  font-family: "Source Sans Pro";
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #3c3b3b;
+}
+
+.loan__button {
+  border-radius: 3px;
+  background-color: #fa5e01;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+}
+
+.search__control--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-radius: 4px;
+  box-shadow: 0 14px 24px 0 rgba(63, 66, 66, 0.14);
+  background-color: #ffffff;
+  margin-bottom: 16px;
+}
+.search__control--container h3 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.92;
+  letter-spacing: normal;
+  color: #3c3b3b;
+  padding-right: 48px;
+}
+.control__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.control__input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.control__input input {
+  flex: 1;
+}
+.search__button {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #1d7a70;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 3.43px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .scores__modal {
+    width: 80%;
+  }
+  .modal__info {
+    padding: 80px 95px;
+  }
+  .modal__title {
+    font-size: 48px;
+    text-align: left;
+  }
+  .modal__header img {
+    height: 144px;
+  }
+  .modal__header {
+    flex-direction: row;
+  }
+  .modal__form {
+    flex-direction: row;
+  }
+  .modal__input {
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  .modal__input input {
+    font-size: 22px;
+  }
+  .loan__button {
+    padding: 0 37px;
+  }
+  .control__form {
+    flex: 1;
+    flex-direction: row;
+  }
+  .control__input {
+    width: 55%;
+  }
+  span.college__name {
+    font-size: 22px;
+  }
+
+  span.college__city {
+    font-size: 18px;
+  }
+
+  .search__control--container h3 {
+    font-size: 24px;
+  }
+  .search__button {
+    padding: 16px 29px;
+    font-size: 16px;
+  }
+  .search__control--container {
+    flex-direction: row;
+  }
+}
